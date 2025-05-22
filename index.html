@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blood Group Form</title>
+  <link rel="stylesheet" href="style.css"> <!-- এক্সটার্নাল CSS লিঙ্ক -->
+</head>
+<body>
+
+  <div class="container">
+    <form method="post" action="" name="contact-form" id="blood-group-form">
+      <h2><span class="highlight">আমাদের স্বপ্ন</span> <span class="red"> "রক্তদান"</span> সেবা</h2>
+      <h4>ব্লাড গ্রুপ রেজিস্ট্রেশন ফর্ম</h4>
+      
+      <input type="text" name="Name" placeholder="আপনার নাম লিখুন" required>
+      <input type="tel" name="Number" placeholder="মোবাইল নম্বর লিখুন" pattern="01[0-9]{9}" maxlength="11" minlength="11" required>
+      <input type="email" name="Email" placeholder="ইমেইল লিখুন" required>
+      <input type="number" id="age" name="Age" placeholder="বয়স লিখুন" min="16" max="65" required>
+    
+      <!-- নতুন যোগ করা ফিল্ডগুলো -->
+      <input type="text" name="Village" placeholder="গ্রামের নাম লিখুন" required>
+      <input type="text" name="Upozila" placeholder="উপজেলার নাম লিখুন " required>
+      <input type="text" name="District" placeholder="জেলার নাম লিখুন" required>
+
+      <select name="Blood-Group" required>
+        <option value="">ব্লাড গ্রুপ নির্বাচন করুন</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+  <!-- রক্তদান সংখ্যা নির্বাচন -->
+    <select id="donation-count" required>
+      <option value="">কতবার রক্ত দিয়েছেন</option>
+      <option value="0">0 বার</option>
+      <option value="1">1 বার</option>
+      <option value="2">2 বার</option>
+      <option value="3">3 বার</option>
+      <option value="4">4 বার</option>
+      <option value="5">5 বার</option>
+      <option value="6">6 বার</option>
+      <option value="7">7 বার</option>
+      <option value="8">8 বার</option>
+      <option value="9">9 বার</option>
+      <option value="10">10 বার</option>
+      <option value="Other">অন্যান্য</option>
+    </select>
+
+    <!-- অন্যান্য ইনপুট ফিল্ড -->
+    <div id="other-donation-count" style="display: none; margin-top: 10px;">
+      <label for="donation-count-other">কতবার রক্ত দিয়েছেন লিখুন:</label>
+      <input type="number" id="donation-count-other" min="11" placeholder="যেমন: 12">
+    </div>
+
+      <input type="submit" value="সাবমিট করুন" id="submit">
+    </form>
+
+    <!-- Success message -->
+    <div id="success-message">✅ সাবমিশন সফল হয়েছে!</div>
+  </div>
+  <script src="script.js" defer></script> <!-- এক্সটার্নাল JavaScript ফাইল লিঙ্ক -->
+</body>
+</html>

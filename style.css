@@ -1,0 +1,107 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #002b4e, #004e89);
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      padding: 30px;
+      background-color: #003b5b;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .highlight {
+        color: #e7e70e;
+        font-weight: bold;
+    }
+    .red{
+      color: #f30707;
+       font-style: italic;
+    }
+    h2 {
+      font-size: 26px;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 20px;
+      color: #ddd;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 5px 2px #00c3ff;
+      background-color: #f0f0f0;
+    }
+
+    #submit {
+      background-color: orangered;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #submit:hover {
+      background-color: #222;
+      transform: scale(1.03);
+    }
+
+    #success-message {
+      display: none;
+      color: #d4f8d4;
+      background-color: #1c7430;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+      span{color: green;}
+      h4 {
+        font-size: 18px;
+      }
+      }
